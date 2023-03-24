@@ -1,0 +1,85 @@
+body{
+    background-color: antiquewhite;
+}
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+}
+
+.div1 {
+    background-color: rgb(3, 37, 66);
+    grid-area: 1 / 1 / 2 / 6;
+    width: 600px;
+    height: 600px;
+}
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+}
+
+/* Автоматическая прокрутка */
+@keyframes carousel {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    45% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    70% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-300%);
+    }
+
+    95% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(-400%);
+    }
+}
+
+.carousel-slide {
+    animation: carousel 15s infinite;
+}
+
+.carousel-slide:hover {
+    animation-play-state: paused;
+}

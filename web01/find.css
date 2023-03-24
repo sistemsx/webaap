@@ -1,0 +1,33 @@
+form {
+    /* display: flex; */
+    align-items: center;
+}
+input[type="text"]{
+    width: 98%;
+    margin: 6px;
+}
+input[type="text"],
+select {
+    
+    font-size: 16px;
+    
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    /* margin-right: 10px; */
+    flex: 1;
+}
+
+button[type="submit"] {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #0077cc;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #005ea6;
+}

@@ -1,0 +1,39 @@
+.buttons {
+    /* margin: 1em; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20px; */
+}
+
+.button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.login-button {
+    background-color: #0077cc;
+    color: #fff;
+}
+
+.register-button {
+    background-color: #fff;
+    color: #0077cc;
+    border: 1px solid #0077cc;
+    margin-left: 10px;
+}
+
+.button:hover {
+    background-color: #005ea6;
+    color: #fff;
+}
+
+.register-button:hover {
+    background-color: #0077cc;
+    color: #fff;
+}
